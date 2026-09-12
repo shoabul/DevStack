@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+Force Light Mode Styles
+:root {
+  color-scheme: light !important;
+}
+
+html, body {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}

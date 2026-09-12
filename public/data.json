@@ -1,0 +1,132 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "The React framework for full-stack web applications with server-side rendering and static export.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fullstack"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A cross-platform JavaScript runtime environment for executing code server-side.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": "express",
+    "name": "Express",
+    "category": "Backend",
+    "description": "Fast, unopinionated, minimalist web framework for Node.js applications and APIs.",
+    "icon": "https://icon.icepanel.io/Technology/png-512/Express.png",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast API"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Top SQL"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-based NoSQL database designed for ease of development and scaling.",
+    "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "NoSQL Leader"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language that builds on JavaScript for better scale.",
+    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Industry Standard"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Language",
+    "description": "A high-level language emphasis on code readability, widely used in web dev and AI.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Versatile"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework packed with classes for rapidly building custom UI.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Trending"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "An open platform for developing, shipping, and running applications inside containers.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Containers"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "description": "Automated container deployment, scaling, and management platform.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Kubernetes.svg",
+    "rating": 4.6,
+    "difficulty": "Advanced",
+    "badge": "Cloud Native"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "category": "Tools",
+    "description": "Distributed version control system designed to handle everything from small to large projects.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Must Have"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Database",
+    "description": "In-memory data structure store used as a distributed, in-memory key–value database and cache.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Ultra Fast"
+  }
+]
