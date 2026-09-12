@@ -2,6 +2,7 @@ import React from "react";
 
 export default function StackCard({ tech, onAdd, isAdded }) {
     return (
+
         <div className="bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all rounded-2xl p-6 flex flex-col justify-between">
             <div>
                 <div className="flex justify-between items-start mb-4">
@@ -44,13 +45,14 @@ export default function StackCard({ tech, onAdd, isAdded }) {
                     onClick={() => onAdd(tech)}
                     disabled={isAdded}
                     className={`w-full py-3 text-sm font-semibold rounded-xl transition-all ${isAdded
-                            ? "bg-slate-100 text-slate-400 cursor-not-allowed"
-                            : "bg-slate-950 hover:bg-slate-800 text-white"
+                        ? "bg-slate-100 text-slate-400 cursor-not-allowed"
+                        : "bg-slate-950 hover:bg-slate-800 text-white"
                         }`}
                 >
                     {isAdded ? "Added to Stack" : "Add to Stack"}
                 </button>
             </div>
         </div>
+
     );
 }

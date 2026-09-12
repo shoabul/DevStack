@@ -38,6 +38,18 @@ function App() {
       <Navbar />
       <Hero />
 
+      <div className="container mx-auto px-5 py-10 lg:py-16 flex flex-col items-center lg:items-start text-center lg:text-left gap-4">
+        <h1 className="text-[36px] sm:text-[44px] lg:text-[58px] leading-[1.1] lg:leading-[1.05] tracking-[-1px] lg:tracking-[-2px] font-extrabold text-gray-900">
+          Explore the{" "}
+          <span className="text-[#e34aa0]">
+            Technologies
+          </span>
+        </h1>
+        <p className="text-gray-600 text-lg">
+          Pick one technology per category to build your ideal stack.
+        </p>
+      </div>
+
       <div className="container mx-auto px-4 py-8 relative">
         {loading && (
           <div className="flex justify-center my-12">
