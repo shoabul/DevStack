@@ -11,9 +11,17 @@ function App() {
   const { data: technologies, loading, error } = useFetchData()
   const [selectedStack, setSelectedStack] = useState([])
 
+  const [toastMessage, setToastMessage] = useState('')
+
   const handleAddToStack = (tech) => {
     if (!selectedStack.some((item) => item.id === tech.id)) {
       setSelectedStack([...selectedStack, tech])
+
+      setToastMessage(`${tech.name || 'Item'} added to stack!`)
+
+      setTimeout(() => {
+        setToastMessage('')
+      }, 1000)
     }
   }
 
@@ -30,7 +38,7 @@ function App() {
       <Navbar />
       <Hero />
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 relative">
         {loading && (
           <div className="flex justify-center my-12">
             <span className="loading loading-spinner loading-lg text-primary"></span>
@@ -45,7 +53,6 @@ function App() {
 
         {!loading && !error && (
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
-            {/* Left side: Card List */}
             <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {technologies.map((tech) => (
                 <StackCard
@@ -67,6 +74,17 @@ function App() {
           </div>
         )}
       </div>
+      {toastMessage && (
+        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-slate-900/90 backdrop-blur-md text-slate-100 text-sm font-medium px-4 py-3 rounded-2xl border border-slate-800 shadow-xl shadow-black/20 animate-in fade-in slide-in-from-bottom-5 duration-300">
+          <div className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/20">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+          </div>
+          <span className="tracking-wide">{toastMessage}</span>
+        </div>
+      )}
+
       <Footer />
     </>
   )
