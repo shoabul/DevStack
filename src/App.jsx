@@ -37,7 +37,7 @@ function App() {
       toast.info(`${itemToRemove.name} removed from stack`, {
         position: "bottom-right",
         autoClose: 1500,
-        theme: "dark",
+        theme: "light",
       })
     }
   }
@@ -47,7 +47,7 @@ function App() {
     toast.error("All technologies removed from stack", {
       position: "bottom-right",
       autoClose: 1500,
-      theme: "dark",
+      theme: "light",
     })
   }
 
