@@ -48,9 +48,9 @@ export default function StackCard({ tech, onAdd, isAdded }) {
 
                 <button
                     onClick={() => onAdd(tech)}
-                    disabled={isAdded}
+                    // disabled={isAdded}
                     className={`w-full py-3 text-sm font-semibold rounded-xl transition-all ${isAdded
-                        ? "bg-slate-100 text-slate-400 cursor-not-allowed"
+                        ? "bg-slate-100 text-slate-400"
                         : "bg-slate-950 hover:bg-slate-800 text-white"
                         }`}
                 >
