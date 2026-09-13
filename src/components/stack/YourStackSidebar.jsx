@@ -24,10 +24,10 @@ export default function YourStackSidebar({ selectedStack, onRemove, onRemoveAll 
                                 className="flex items-center justify-between p-3 border border-slate-200/60 rounded-xl bg-slate-50/50 hover:bg-slate-50 transition-all"
                             >
                                 <div className="flex items-center gap-3">
-                                    <img src={item.icon} alt={item.title} className="w-6 h-6 object-contain" />
+                                    <img src={item.icon} alt={item.name} className="w-6 h-6 object-contain" />
                                     <div>
                                         <h4 className="text-sm font-bold text-slate-800 leading-tight">
-                                            {item.title}
+                                            {item.name}
                                         </h4>
                                         <span className="text-[10px] text-slate-400 block font-medium">
                                             {item.category}
