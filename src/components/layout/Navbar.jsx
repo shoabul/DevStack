@@ -29,7 +29,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-center justify-center md:justify-start">
-                    <img src={Logo} alt="Logo" className="h-7 w-auto sm:h-8 md:h-10" />
+                   <a href="#home"> <img src={Logo} alt="Logo" className="h-7 w-auto sm:h-8 md:h-10" /> </a>
                 </div>
 
                 <div className="hidden items-center gap-8 md:flex">
@@ -68,10 +68,10 @@ const Navbar = () => {
 
                 <div className="flex items-center gap-2 sm:gap-5">
                     <button className="text-xs font-medium text-gray-700 transition hover:text-pink-600 sm:text-base">
-                        Sign In
+                        <a href="#sign-in">Sign In</a>
                     </button>
                     <button className="rounded-full bg-pink-600 px-3 py-1.5 text-xs font-semibold text-white shadow-md transition hover:bg-pink-700 sm:px-7 sm:py-3 sm:text-base">
-                        Sign Up
+                        <a href="#sign-up">Sign Up</a>
                     </button>
                 </div>
 
