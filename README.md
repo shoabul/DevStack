@@ -128,31 +128,31 @@ Potential future improvements for this project include:
 - Expanding the data model with additional project metadata
 - Improving the mobile navigation and responsive interactions
 
-
+## Answering Question
 
 1. What is JSX, and why is it used in React?
 
-What it is: JSX stands for JavaScript XML. It is a syntax extension that allows you to write HTML-like markup directly inside JavaScript files.
+JSX stands for JavaScript XML. It is a syntax extension that allows you to write HTML directly inside JavaScript files.
 
-Why it's used: It makes writing UI components intuitive and simple by keeping rendering logic and visual markup together in one readable place.
+It makes writing UI components intuitive and simple by keeping rendering logic and visual markup together in one readable place.
 
 2. What is the difference between props and state?
 
-Props (Properties): Read-only data passed down from a parent component to a child component. The child cannot modify its own props.
+Props: Read only data passed down from a parent component to a child component. The child cannot modify its own props.
 
 State: Mutable data managed internally within a component that changes over time (usually via user interactions). When state updates, the component re-renders.
 
 3. What does the useState hook do, and where did you use it in this project?
 
-What it does: It creates and manages local state variables in functional components.
+It creates and manages local state variables in functional components.
 
-Where used in DevStack: In App.jsx to manage the array of selected technologies (selectedStack), and inside useFetchData.js to store fetched tech items, loading statuses, and errors.
+In App.jsx to manage the array of selected technologies (selectedStack), and inside useFetchData.js to store fetched tech items, loading statuses, and errors.
 
 4. What does the useEffect hook do, and why did you need it to load the JSON data?
 
-What it does: It performs side effects in components, such as data fetching, subscriptions, or manually manipulating the DOM after rendering.
+It performs side effects in components, such as data fetching, subscriptions, or manually manipulating the DOM after rendering.
 
-Why needed here: To fetch the technology dataset from /public/data.json asynchronously when the application first mounts in the browser.
+To fetch the technology dataset from /public/data.json asynchronously when the application first mounts in the browser.
 
 5. Why does every item in a .map() list need a unique key prop?
 
@@ -160,12 +160,16 @@ React uses the key prop to identify which items have changed, been added, or bee
 
 6. What is conditional rendering? Show one place you used it.
 
-What it is: Displaying different UI elements or components based on whether a specific condition evaluates to true or false.
+Displaying different UI elements or components based on whether a specific condition evaluates to true or false.
 
-Example in DevStack: Showing an empty stack message in YourStackSidebar.jsx when selectedStack.length === 0:
+Example in DevStack: Showing an empty stack message in YourStackSidebar.jsx when ```bash selectedStack.length === 0:```
+
+```bash
 
 {selectedStack.length === 0 ? (
                     <div className="py-8 text-center text-slate-400 text-sm">
                         No technologies added yet.
                     </div>
                 ) : ( other code )}
+
+```
