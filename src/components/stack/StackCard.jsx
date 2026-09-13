@@ -2,7 +2,7 @@ import React from "react";
 
 export default function StackCard({ tech, onAdd, isAdded }) {
     return (
-        
+
         <div
             className={`bg-white transition-all duration-200 rounded-2xl p-6 flex flex-col justify-between ${isAdded
                 ? "border-2 border-[#c6055c] ring-4 ring-[#c6055c]/20 shadow-md"

@@ -26,6 +26,12 @@ function App() {
         draggable: true,
         theme: "light",
       })
+    } else {
+      toast.warning(`${tech.name} is already in your stack!`, {
+        position: "bottom-right",
+        autoClose: 2000,
+        theme: "light",
+      })
     }
   }
 
